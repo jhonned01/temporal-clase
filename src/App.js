@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Densidad from "../src/components/Densidad.jsx";
+import Vertice from "./components/Vertice.jsx";
+import Aristas from "../src/components/Aristas";
+import Incremento from "../src/components/Incremento";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <div>
+        <Densidad />
+      </div>
+      <div>
+        <Vertice />
+      </div>
+      <div>
+        <Incremento />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
